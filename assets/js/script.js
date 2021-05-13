@@ -37,7 +37,8 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 
   //  evento en  metodo children en list group items seccion "Quienes somos"
-  var QSicon = $("#quienessomos").children().find("i");
+  //   var QSicon = $("#quienessomos").children().find("i");
+  var QSicon = $("i").parent().find("li");
   console.log("Muestra hijos id quienessomos--->", QSicon);
 
   //Final Document ready Jquery
