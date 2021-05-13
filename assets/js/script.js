@@ -36,10 +36,37 @@ $(function () {
   // activa tooltip JQ Bootstrap
   $('[data-toggle="tooltip"]').tooltip();
 
-  //  evento en  metodo children en list group items seccion "Quienes somos"
-  //   var QSicon = $("#quienessomos").children().find("i");
-  var QSicon = $(".fas").parent().find("li");
+  //  evento en  metodo children en H3 secciones
+  var QSicon = $("body").children().find("h3");
   console.log("Muestra hijos id quienessomos--->", QSicon);
+  var QSicon1 = QSicon.eq(0);
+  var QSicon2 = QSicon.eq(1);
+  var QSicon3 = QSicon.eq(2);
+
+  QSicon1.on({
+    mouseenter: function () {
+      $(this).css("color", "#5AF07E");
+    },
+    mouseleave: function () {
+      $(this).css("color", "white");
+    },
+  });
+  QSicon2.on({
+    mouseenter: function () {
+      $(this).css("color", "#5AF07E");
+    },
+    mouseleave: function () {
+      $(this).css("color", "white");
+    },
+  });
+  QSicon3.on({
+    mouseenter: function () {
+      $(this).css("color", "#5AF07E");
+    },
+    mouseleave: function () {
+      $(this).css("color", "white");
+    },
+  });
 
   //Final Document ready Jquery
 });
