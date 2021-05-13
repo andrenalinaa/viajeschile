@@ -36,5 +36,9 @@ $(function () {
   // activa tooltip JQ Bootstrap
   $('[data-toggle="tooltip"]').tooltip();
 
+  //  evento en  metodo children en list group items seccion "Quienes somos"
+  var QSicon = $("#quienessomos").children().find("i");
+  console.log("Muestra hijos id quienessomos--->", QSicon);
+
   //Final Document ready Jquery
 });
