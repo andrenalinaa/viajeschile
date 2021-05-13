@@ -3,8 +3,9 @@ body {
   color: white;
   text-align: left;
   background-color: black;
+  /* Resuelve el overlap del nav sobre el header en dispositivos sm */
+  padding-top: 55px;
 }
-
 body * {
   /* border: 1px solid green; */
   box-sizing: border-box;
