@@ -1,7 +1,7 @@
 $(function () {
   //Inicio Document ready Jquery
 
-  //cerrar navegado cuando se haga click en un item del menu
+  //cerrar navegador cuando se haga click en un item del menu
   $(".navbar-nav>li>a").on("click", function () {
     $(".navbar-collapse").collapse("hide");
   });
@@ -11,10 +11,8 @@ $(function () {
     $("#hide-sm").hide();
   } //fin del if
 
-  //smooth-scroll sections
+  //smooth-scroll to sections
   $("a").click(function (event) {
-    //el metodo hash evalua el atributo href
-    //alert(this.hash)
     //el metodo hash evalua el atributo href es diferente de vacio
     if (this.hash !== "") {
       // previene el evento default
@@ -36,7 +34,7 @@ $(function () {
   // activa tooltip JQ Bootstrap
   $('[data-toggle="tooltip"]').tooltip();
 
-  //  evento en  metodo children en H3 secciones
+  //  evento en  metodo children para que H3 secciones cambien a color verde
   var QSicon = $("body").children().find("h3");
   console.log("Muestra hijos id quienessomos--->", QSicon);
   var QSicon1 = QSicon.eq(0);
